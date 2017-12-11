@@ -1,0 +1,10 @@
+<div class="dropdown">
+  <button class="dropbtn">Select Season</button>
+  <div class="dropdown-content">
+  <ul>
+    <li *ngFor="let season of seasons">
+      {{season.startYear}}/{{(season.startYear%100)+1}}
+    </li>
+  </ul>
+</div>
+</div>
