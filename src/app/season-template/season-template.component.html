@@ -1,0 +1,16 @@
+<p>
+  Select the participating teams
+</p>
+<ul>
+  <li *ngFor="let team of teams">
+  <input (click)="onSelect(team, $event)" type="checkbox" name="{{team.name}}" value="{{team.name}}">
+  {{team.name}}
+  </li>
+</ul>
+<div *ngIf="selectedTeams">
+  <ul>
+    <li *ngFor="let selectedTeam of selectedTeams">
+      {{selectedTeam.name}}
+    </li>
+  </ul>
+</div>

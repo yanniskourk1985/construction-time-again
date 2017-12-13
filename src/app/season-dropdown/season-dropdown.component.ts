@@ -9,9 +9,12 @@ import { SEASONS } from '../seasons';
 })
 export class SeasonDropdownComponent implements OnInit {
   seasons = SEASONS;
+  selectedSeason: Season;
   constructor() { }
 
   ngOnInit() {
   }
-
+  onSelect(season: Season):void {
+    this.selectedSeason = season;
+  }
 }
