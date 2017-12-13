@@ -3,7 +3,7 @@
   <div class="dropdown-content">
   <ul>
     <li *ngFor="let season of seasons">
-      {{season.startYear}}/{{(season.startYear%100)+1}}
+      {{season.startYear}}/{{(season.startYear+1)%100}}
     </li>
   </ul>
 </div>
